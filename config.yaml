@@ -1,0 +1,27 @@
+jarvis:
+  name: JARVIS
+  personality: "calm, confident, British, concise"
+  llm: mistral-small-latest
+  max_tool_calls: 15
+  memory_top_k: 5
+
+voice:
+  input_device: default
+  language: en
+  whisper_model: base        # tiny / base / small / medium
+  tts_provider: elevenlabs   # or: pyttsx3
+
+filesystem:
+  trash_retention_hours: 24
+  safe_delete: true
+  allowed_paths: []          # empty = full access
+
+browser:
+  engine: chromium           # chromium / firefox / edge
+  headless: false
+  timeout_seconds: 30
+
+server:
+  mcp_port: 8765
+  ui_port: 3000
+  api_port: 8000
